@@ -31,7 +31,6 @@ D:\Adeel\Research\aspnetcore\~ASP.NetCore - Copy\CustomerOrders\bin\Debug\netcor
 D:\Adeel\Research\aspnetcore\~ASP.NetCore - Copy\CustomerOrders\bin\Debug\netcoreapp2.1\CustomerOrders.runtimeconfig.dev.json
 D:\Adeel\Research\aspnetcore\~ASP.NetCore - Copy\CustomerOrders\bin\Debug\netcoreapp2.1\CustomerOrders.dll
 D:\Adeel\Research\aspnetcore\~ASP.NetCore - Copy\CustomerOrders\bin\Debug\netcoreapp2.1\CustomerOrders.pdb
-D:\Adeel\Research\aspnetcore\~ASP.NetCore - Copy\CustomerOrders\obj\Debug\netcoreapp2.1\CustomerOrders.csprojAssemblyReference.cache
 D:\Adeel\Research\aspnetcore\~ASP.NetCore - Copy\CustomerOrders\obj\Debug\netcoreapp2.1\CustomerOrders.csproj.CoreCompileInputs.cache
 D:\Adeel\Research\aspnetcore\~ASP.NetCore - Copy\CustomerOrders\obj\Debug\netcoreapp2.1\CustomerOrders.RazorAssemblyInfo.cache
 D:\Adeel\Research\aspnetcore\~ASP.NetCore - Copy\CustomerOrders\obj\Debug\netcoreapp2.1\CustomerOrders.RazorAssemblyInfo.cs
