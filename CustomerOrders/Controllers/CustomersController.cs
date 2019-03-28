@@ -8,6 +8,7 @@ using CustomerOrders.DTO;
 using CustomerOrders.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace CustomerOrders.Controllers
 {
@@ -26,7 +27,7 @@ namespace CustomerOrders.Controllers
         [HttpGet]
         public ActionResult<IList<CustomerDTO>> Get()
         {
-            var customers = context.Customers.ToList();
+            var customers = context.Customers.Include(s=>s.Orders).ToList();
 
             return mapper.Map<List<Customer>, List<CustomerDTO>>(customers);
         }

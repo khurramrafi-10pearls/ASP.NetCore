@@ -6,9 +6,7 @@ using System.Threading.Tasks;
 namespace CustomerOrders.DTO
 {
     public class SalesOrdersDTO
-    {
-        public int SalesOrdersId { get; set; }
-        public int RevisionNumber { get; set; }
+    {       
         public DateTime OrderDate { get; set; }
         public DateTime DueDate { get; set; }
         public DateTime ShipDate { get; set; }
@@ -18,6 +16,5 @@ namespace CustomerOrders.DTO
         public string AccountNumber { get; set; }
         public string Comment { get; set; }
         public decimal Amount { get; set; }
-        public int CustomerId { get; set; }
     }
 }
