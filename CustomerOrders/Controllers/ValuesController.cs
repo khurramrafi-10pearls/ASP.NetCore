@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using CustomerOrders.CustomServices;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CustomerOrders.Controllers
@@ -10,10 +11,18 @@ namespace CustomerOrders.Controllers
     [ApiController]
     public class ValuesController : ControllerBase
     {
+        private readonly IOrderService service;
+
+        public ValuesController(IOrderService service)
+        {           
+            this.service = service;
+            Console.WriteLine("Constructor call : "+service.GetLead());
+        }
         // GET api/values
         [HttpGet]
         public ActionResult<IEnumerable<string>> Get()
         {
+            Console.WriteLine("Get call : " + service.GetLead());
             return new string[] { "value1", "value2" };
         }
 

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using CustomerOrders.CustomServices;
 using AutoMapper;
 using CustomerOrders.Data;
 using Microsoft.AspNetCore.Builder;
@@ -31,6 +32,9 @@ namespace CustomerOrders
             services.AddAutoMapper();
             services.AddDbContext<ApplicationDbContext>(opts => opts.UseSqlServer(Configuration["ConnectionString:CoreDB"]));
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+            services.AddScoped<IOrderService, OrderService>();
+
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
