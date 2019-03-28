@@ -5,13 +5,25 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Migrations\20190328110030_SalesOrders.cs" />
+    <Compile Remove="Migrations\20190328110030_SalesOrders.Designer.cs" />
+    <Compile Remove="Migrations\20190328110432_SalesOrders.cs" />
+    <Compile Remove="Migrations\20190328110432_SalesOrders.Designer.cs" />
+    <Compile Remove="Migrations\20190328111715_SalesOrders.cs" />
+    <Compile Remove="Migrations\20190328111715_SalesOrders.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Folder Include="wwwroot\" />
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="8.0.0" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="6.0.0" />
     <PackageReference Include="Microsoft.AspNetCore.App" />
     <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.1.2" PrivateAssets="All" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.1.8" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.1.1" />
   </ItemGroup>
 
 </Project>
