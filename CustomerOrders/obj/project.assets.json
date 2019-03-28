@@ -12592,11 +12592,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Adeel\\Research\\aspnetcore\\ASP.NetCore\\CustomerOrders\\CustomerOrders.csproj",
+      "projectUniqueName": "D:\\Adeel\\Research\\aspnetcore\\~ASP.NetCore - Copy\\CustomerOrders\\CustomerOrders.csproj",
       "projectName": "CustomerOrders",
-      "projectPath": "D:\\Adeel\\Research\\aspnetcore\\ASP.NetCore\\CustomerOrders\\CustomerOrders.csproj",
+      "projectPath": "D:\\Adeel\\Research\\aspnetcore\\~ASP.NetCore - Copy\\CustomerOrders\\CustomerOrders.csproj",
       "packagesPath": "C:\\Users\\adeel.ahmed\\.nuget\\packages\\",
-      "outputPath": "D:\\Adeel\\Research\\aspnetcore\\ASP.NetCore\\CustomerOrders\\obj\\",
+      "outputPath": "D:\\Adeel\\Research\\aspnetcore\\~ASP.NetCore - Copy\\CustomerOrders\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
