@@ -12,3 +12,17 @@ E:\D1\ASP.Net Core\CustomerOrders\CustomerOrders\obj\Debug\netcoreapp2.1\Custome
 E:\D1\ASP.Net Core\CustomerOrders\CustomerOrders\bin\Debug\netcoreapp2.1\CustomerOrders.pdb
 E:\D1\ASP.Net Core\CustomerOrders\CustomerOrders\obj\Debug\netcoreapp2.1\CustomerOrders.dll
 E:\D1\ASP.Net Core\CustomerOrders\CustomerOrders\obj\Debug\netcoreapp2.1\CustomerOrders.pdb
+D:\Adeel\Research\aspnetcore\ASP.NetCore\CustomerOrders\bin\Debug\netcoreapp2.1\CustomerOrders.deps.json
+D:\Adeel\Research\aspnetcore\ASP.NetCore\CustomerOrders\bin\Debug\netcoreapp2.1\CustomerOrders.runtimeconfig.json
+D:\Adeel\Research\aspnetcore\ASP.NetCore\CustomerOrders\bin\Debug\netcoreapp2.1\CustomerOrders.runtimeconfig.dev.json
+D:\Adeel\Research\aspnetcore\ASP.NetCore\CustomerOrders\bin\Debug\netcoreapp2.1\CustomerOrders.dll
+D:\Adeel\Research\aspnetcore\ASP.NetCore\CustomerOrders\bin\Debug\netcoreapp2.1\CustomerOrders.pdb
+D:\Adeel\Research\aspnetcore\ASP.NetCore\CustomerOrders\obj\Debug\netcoreapp2.1\CustomerOrders.csprojAssemblyReference.cache
+D:\Adeel\Research\aspnetcore\ASP.NetCore\CustomerOrders\obj\Debug\netcoreapp2.1\CustomerOrders.csproj.CoreCompileInputs.cache
+D:\Adeel\Research\aspnetcore\ASP.NetCore\CustomerOrders\obj\Debug\netcoreapp2.1\CustomerOrders.RazorAssemblyInfo.cache
+D:\Adeel\Research\aspnetcore\ASP.NetCore\CustomerOrders\obj\Debug\netcoreapp2.1\CustomerOrders.RazorAssemblyInfo.cs
+D:\Adeel\Research\aspnetcore\ASP.NetCore\CustomerOrders\obj\Debug\netcoreapp2.1\CustomerOrders.AssemblyInfoInputs.cache
+D:\Adeel\Research\aspnetcore\ASP.NetCore\CustomerOrders\obj\Debug\netcoreapp2.1\CustomerOrders.AssemblyInfo.cs
+D:\Adeel\Research\aspnetcore\ASP.NetCore\CustomerOrders\obj\Debug\netcoreapp2.1\CustomerOrders.RazorTargetAssemblyInfo.cache
+D:\Adeel\Research\aspnetcore\ASP.NetCore\CustomerOrders\obj\Debug\netcoreapp2.1\CustomerOrders.dll
+D:\Adeel\Research\aspnetcore\ASP.NetCore\CustomerOrders\obj\Debug\netcoreapp2.1\CustomerOrders.pdb

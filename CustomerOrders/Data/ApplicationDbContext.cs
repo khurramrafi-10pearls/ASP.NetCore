@@ -16,5 +16,6 @@ namespace CustomerOrders.Data
         }
 
         public DbSet<Customer> Customers { get; set; }
+        public DbSet<SalesOrders> SalesOrders { get; set; }
     }
 }
