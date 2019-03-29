@@ -18,6 +18,7 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.AspNetCore.Identity;
 using Swashbuckle.AspNetCore.Swagger;
+using CustomerOrders.Middleware;
 
 namespace CustomerOrders
 {
@@ -83,6 +84,7 @@ namespace CustomerOrders
 
             app.UseHttpsRedirection();
             app.UseAuthentication();
+            app.UseMiddlewareSample();
             app.UseMvc();
             
             //Run Swagger Middleware 

@@ -29,6 +29,7 @@ namespace CustomerOrders.Controllers
         [HttpGet]
         public async Task<IList<CustomerDTO>> Get()
         {
+            throw new Exception("Test Exp");
             var customers = await context.Customers.Include(s => s.Orders).ToListAsync();
 
             return mapper.Map<List<Customer>, List<CustomerDTO>>(customers);
