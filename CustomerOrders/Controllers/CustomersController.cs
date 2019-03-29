@@ -27,28 +27,28 @@ namespace CustomerOrders.Controllers
         }
 
         [HttpGet]
-        public async Task<IList<CustomerDTO>> Get()
+        public IList<CustomerDTO> Get()
         {
-            throw new Exception("Test Exp");
-            var customers = await context.Customers.Include(s => s.Orders).ToListAsync();
+            var customers = context.Customers.ToList();
 
             return mapper.Map<List<Customer>, List<CustomerDTO>>(customers);
         }
 
         [HttpGet("{id}")]
-        public async Task<IList<CustomerDTO>> Get(int id)
+        public async Task<CustomerDTO> Get(int id)
         {
             if (id > 0)
             {
-                var customers = await context.Customers.Include(s => s.Orders).Where(p => p.CustomerId == id).ToListAsync();
+                var customer = await context.Customers.Include(s => s.Orders).FirstOrDefaultAsync(p => p.CustomerId == id);
 
-                return mapper.Map<List<Customer>, List<CustomerDTO>>(customers);
+                return mapper.Map<Customer, CustomerDTO>(customer);
             }
 
             return null;
         }
 
         [HttpPost]
+        [Authorize]
         public IActionResult Post([FromBody] CustomerDTO customer)
         {
             if (customer != null)
@@ -56,10 +56,10 @@ namespace CustomerOrders.Controllers
                 var customerModel = mapper.Map<CustomerDTO, Customer>(customer);
                 context.Add(customerModel);
                 context.SaveChanges();
-                return Ok(customerModel);
+                return Ok(new { success = true, id = customerModel.CustomerId });
             }
 
-            return null;
+            return BadRequest(new { success = false });
         }
     }
 }

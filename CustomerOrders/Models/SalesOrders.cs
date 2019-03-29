@@ -16,5 +16,6 @@ namespace CustomerOrders.Models
         public string Comment { get; set; }
         public decimal Amount { get; set; }
         public int CustomerId { get; set; }
+        public Customer Customer { get; set; }
     }
 }

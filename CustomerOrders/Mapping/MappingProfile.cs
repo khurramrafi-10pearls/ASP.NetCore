@@ -13,7 +13,9 @@ namespace CustomerOrders.Mapping
         public MappingProfile()
         {
             CreateMap<Customer, CustomerDTO>();
+            CreateMap<SalesOrders, SalesOrdersDTO>();
             CreateMap<CustomerDTO, Customer>();
+            CreateMap<SalesOrdersDTO, SalesOrders>();
         }
     }
 }
