@@ -13,6 +13,7 @@ namespace CustomerOrders.Mapping
         public MappingProfile()
         {
             CreateMap<Customer, CustomerDTO>();
+            CreateMap<CustomerDTO, Customer>();
         }
     }
 }

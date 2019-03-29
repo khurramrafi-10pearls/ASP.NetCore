@@ -27,17 +27,45 @@ namespace CustomerOrders.Controllers
         }
 
         [HttpGet]
-        public ActionResult<IList<CustomerDTO>> Get()
+        public async Task<IList<CustomerDTO>> Get()
         {
-            var customers = context.Customers.Include(s=>s.Orders).ToList();
+            var customers = await context.Customers.Include(s => s.Orders).ToListAsync();
 
             return mapper.Map<List<Customer>, List<CustomerDTO>>(customers);
         }
 
-        [Authorize]
-        [HttpGet("test")]
-        public void Post()
+        [HttpGet("{id}")]
+        public async Task<IList<CustomerDTO>> Get(int id)
         {
+            if (id > 0)
+            {
+                var customers = await context.Customers.Include(s => s.Orders).Where(p => p.CustomerId == id).ToListAsync();
+
+                return mapper.Map<List<Customer>, List<CustomerDTO>>(customers);
+            }
+
+            return null;
+        }
+
+        //[Authorize]
+        //[HttpGet("test")]
+        //public void Post()
+        //{
+        //}
+
+        // POST api/values
+        [HttpPost]
+        public IActionResult Post([FromBody] CustomerDTO customer)
+        {
+            if (customer != null)
+            {
+                var customerModel = mapper.Map<CustomerDTO, Customer>(customer);
+                context.Add(customerModel);
+                context.SaveChanges();
+                return Ok(customerModel);
+            }
+
+            return null;
         }
     }
 }
