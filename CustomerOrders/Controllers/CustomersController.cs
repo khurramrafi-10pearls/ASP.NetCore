@@ -6,6 +6,7 @@ using AutoMapper;
 using CustomerOrders.Data;
 using CustomerOrders.DTO;
 using CustomerOrders.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -24,12 +25,19 @@ namespace CustomerOrders.Controllers
             this.context = context;
             this.mapper = mapper;
         }
+
         [HttpGet]
         public ActionResult<IList<CustomerDTO>> Get()
         {
             var customers = context.Customers.Include(s=>s.Orders).ToList();
 
             return mapper.Map<List<Customer>, List<CustomerDTO>>(customers);
+        }
+
+        [Authorize]
+        [HttpGet("test")]
+        public void Post()
+        {
         }
     }
 }
