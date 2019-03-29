@@ -17,6 +17,7 @@ using Microsoft.Extensions.Options;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.AspNetCore.Identity;
+using Swashbuckle.AspNetCore.Swagger;
 
 namespace CustomerOrders
 {
@@ -55,6 +56,16 @@ namespace CustomerOrders
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
             services.AddScoped<IOrderService, OrderService>();
             services.AddScoped<IAccountService, AccountService>();
+            
+            //Register Swagger Services 
+            services.AddSwaggerGen(c => {
+                c.SwaggerDoc("v1", new Info
+                {
+                    Version = "v1",
+                    Title = "Core API",
+                    Description = "ASP.NET Core Web API"
+                });
+            });
 
         }
 
@@ -73,6 +84,13 @@ namespace CustomerOrders
             app.UseHttpsRedirection();
             app.UseAuthentication();
             app.UseMvc();
+            
+            //Run Swagger Middleware 
+            app.UseSwagger();
+            app.UseSwaggerUI(c =>
+            {
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "ASP.NET Core Web API");
+            });
         }
     }
 }
