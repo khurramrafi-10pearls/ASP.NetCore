@@ -47,13 +47,6 @@ namespace CustomerOrders.Controllers
             return null;
         }
 
-        //[Authorize]
-        //[HttpGet("test")]
-        //public void Post()
-        //{
-        //}
-
-        // POST api/values
         [HttpPost]
         public IActionResult Post([FromBody] CustomerDTO customer)
         {
